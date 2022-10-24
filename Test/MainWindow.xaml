@@ -19,13 +19,13 @@
                     <ImageBrush ImageSource="/CloseBtn.png" TileMode="None" Stretch="UniformToFill"/>
                 </Button.Background>
             </Button>
-            <Button Cursor="Hand" x:Name="MinimizeBtn" VerticalContentAlignment="Center" Height="30" Width="30" Content="" Margin="0,0,70,0" VerticalAlignment="Center" HorizontalAlignment="Right" FontSize="10" Click="MinimizeBtn_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Button Cursor="Hand" x:Name="MinimizeBtn" VerticalContentAlignment="Center" Height="30" Width="30" Content="" Margin="699,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="10" Click="MinimizeBtn_Click" BorderBrush="{x:Null}" Foreground="{x:Null}">
                 <Button.Background>
                     <ImageBrush ImageSource="/CloseBtn.png" TileMode="None" Stretch="UniformToFill"/>
                 </Button.Background>
             </Button>
         </Grid>
-        
+
         <Grid x:Name="ResizableRight" Background="Transparent" Cursor="SizeWE" HorizontalAlignment="Right" Width="5"/>
         <Grid x:Name="ResizableLeft" Background="Transparent" Cursor="SizeWE" HorizontalAlignment="Left" Width="5"/>
         <Grid x:Name="ResizableBottom" Background="Transparent" Cursor="SizeNS" VerticalAlignment="Bottom" Height="5"/>
