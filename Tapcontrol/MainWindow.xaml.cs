@@ -12,10 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WindowStyleTemplate;
-using WindowUITemplates;
 
-namespace Vertragsgenerator
+namespace WpfApp2
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
@@ -24,21 +22,17 @@ namespace Vertragsgenerator
     {
         public MainWindow()
         {
-            Navigation nav = new Navigation();
-            
-
-            DarkWindow window = new DarkWindow(
-                title: "Vertragsgenerator",
-                content: nav
-                );
-            window.Show();
-            Close();
-
+            InitializeComponent();
         }
-
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("De Ben het en geili Muetter");
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            new DarkWindow().Show();
+            MessageBox.Show("De Jan het en geili Muetter");
         }
+
+
     }
 }
