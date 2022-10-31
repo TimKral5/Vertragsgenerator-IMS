@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vertragsgenerator", "Vertra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B16B363C-2890-4CC7-82D4-86C355BDE8D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowStyleTemplate", "WindowStyleTemplate\WindowStyleTemplate.csproj", "{93C98681-5F1F-40D6-B72B-18969435BCD8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B16B363C-2890-4CC7-82D4-86C355BDE8D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B16B363C-2890-4CC7-82D4-86C355BDE8D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B16B363C-2890-4CC7-82D4-86C355BDE8D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C98681-5F1F-40D6-B72B-18969435BCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C98681-5F1F-40D6-B72B-18969435BCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C98681-5F1F-40D6-B72B-18969435BCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C98681-5F1F-40D6-B72B-18969435BCD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

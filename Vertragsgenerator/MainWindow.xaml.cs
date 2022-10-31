@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WindowStyleTemplate;
 
 namespace Vertragsgenerator
 {
@@ -22,7 +23,17 @@ namespace Vertragsgenerator
     {
         public MainWindow()
         {
-            InitializeComponent();
+            DarkWindow window = new DarkWindow(
+                title: "Vertragsgenerator",
+                content: new Grid { Background = new SolidColorBrush(Color.FromRgb(255,0,0)), Name="test" }
+                );
+            window.Show();
+            Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new DarkWindow().Show();
         }
     }
 }

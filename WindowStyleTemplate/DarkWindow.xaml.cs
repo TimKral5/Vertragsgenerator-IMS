@@ -14,14 +14,17 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DNBSoft.WPF;
 
-namespace Test
+namespace WindowStyleTemplate
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DarkWindow : Window
     {
-        public MainWindow()
+        public DarkWindow(
+            string title = "Application",
+            Grid content = null
+            )
         {
             InitializeComponent();
             WindowResizer wr = new WindowResizer(this);
@@ -29,6 +32,15 @@ namespace Test
             wr.addResizerLeft(ResizableLeft);
             wr.addResizerRight(ResizableRight);
             wr.addResizerUp(ResizableTop);
+
+            TitleLbl.Content = title;
+
+            if (content != null)
+            {
+                content.Margin = new Thickness(0, 30, 0, 0);
+                AddVisualChild(content);
+                content.ShowGridLines = true;
+            }
         }
 
         #region WindowHandler
