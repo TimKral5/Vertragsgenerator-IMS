@@ -12,10 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WindowStyleTemplate;
 using WindowUITemplates;
 
-namespace Vertragsgenerator
+namespace UIEdit
 {
     /// <summary>
     /// Interaktionslogik für MainWindow.xaml
@@ -24,21 +23,10 @@ namespace Vertragsgenerator
     {
         public MainWindow()
         {
-            Navigation nav = new Navigation();
-            
-
-            DarkWindow window = new DarkWindow(
-                title: "Vertragsgenerator",
-                content: nav
-                );
-            window.Show();
-            Close();
-
+            InitializeComponent();
+            Body.Children.Add(new Navigation());
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            new DarkWindow().Show();
-        }
+
     }
 }

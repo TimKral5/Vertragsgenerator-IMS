@@ -23,7 +23,7 @@ namespace WindowStyleTemplate
     {
         public DarkWindow(
             string title = "Application",
-            Grid content = null
+            UserControl content = null
             )
         {
             InitializeComponent();
@@ -37,9 +37,7 @@ namespace WindowStyleTemplate
 
             if (content != null)
             {
-                content.Margin = new Thickness(0, 30, 0, 0);
-                AddVisualChild(content);
-                content.ShowGridLines = true;
+                ContentGrid.Children.Add(content);
             }
         }
 

@@ -26,6 +26,10 @@
             <Label x:Name="TitleLbl" Content="null&#xD;&#xA;ertragsgenerator" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Foreground="White" Width="110"/>
         </Grid>
 
+        <Grid Margin="0,30,0,0" x:Name="ContentGrid">
+            
+        </Grid>
+
         <Grid x:Name="ResizableRight" Background="Transparent" Cursor="SizeWE" HorizontalAlignment="Right" Width="5"/>
         <Grid x:Name="ResizableLeft" Background="Transparent" Cursor="SizeWE" HorizontalAlignment="Left" Width="5"/>
         <Grid x:Name="ResizableBottom" Background="Transparent" Cursor="SizeNS" VerticalAlignment="Bottom" Height="5"/>
