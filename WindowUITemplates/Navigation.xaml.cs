@@ -15,14 +15,26 @@ using System.Windows.Shapes;
 
 namespace WindowUITemplates
 {
-    /// <summary>
-    /// Interaktionslogik für Navigation.xaml
-    /// </summary>
+    public class NavTab
+    {
+        public string TabName { get; set; }
+        public UIElement Tab { get; set; }
+    }
+
     public partial class Navigation : UserControl
     {
-        public Navigation()
+        public Navigation(NavTab[] tabs = null)
         {
             InitializeComponent();
+            if (tabs == null)
+                return;
+            foreach(var tab in tabs)
+            {
+                var _tab = new TabItem();
+                _tab.Header = tab.TabName;
+                _tab.Content = tab.Tab;
+                Nav.Items.Add(_tab);
+            }
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {

@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <TabControl Background="Transparent">
+        <TabControl x:Name="Nav" Background="Transparent">
             <TabItem Header="Kaufvertrag">
                 <DockPanel VerticalAlignment="Top">
                     <StackPanel>
