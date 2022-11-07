@@ -24,7 +24,10 @@ namespace Vertragsgenerator
     {
         public MainWindow()
         {
-            Navigation nav = new Navigation();
+            Navigation nav = new Navigation(new NavTab[]
+            {
+                new NavTab() { TabName="test", Tab=new Grid() }
+            });
             
 
             DarkWindow window = new DarkWindow(

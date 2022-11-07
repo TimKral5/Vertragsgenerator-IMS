@@ -5,51 +5,160 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:WindowUITemplates"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TabControl x:Name="Nav" Background="Transparent">
+             d:DesignHeight="450" d:DesignWidth="800" Background="#181735" >
+    
+    
+    <Grid ShowGridLines="False" Background="Black">
+        <TabControl x:Name="Nav">
             <TabItem Header="Kaufvertrag">
-                <DockPanel VerticalAlignment="Top">
-                    <StackPanel>
-                        <TextBlock  HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15">
+                <Grid Background="#181735">
+                    
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Grid.Row="0">
                             Art:
-                                <TextBox Width="150" Background="#FF484848"> </TextBox>
-                        </TextBlock>
-                        <TextBlock FontSize="15" HorizontalAlignment="Left">
+                                <TextBox x:Name="Art_txt" Width="150"/>
+                    </TextBlock>
+                    <TextBlock Foreground="White" FontSize="15" HorizontalAlignment="Left" Grid.Row="1">
                                 Zeitpunkt:
-                                <TextBox  Width="110"></TextBox>
-                        </TextBlock>
-                        <TextBlock FontSize="15" HorizontalAlignment="Left">
+                                <TextBox x:Name="Zeitpunkt_txt"  Width="110"></TextBox>
+                    </TextBlock>
+                    <TextBlock Foreground="White" FontSize="15" HorizontalAlignment="Left" Grid.Row="2">
                                 Ort:
-                                <TextBox Width="151"></TextBox>
-                        </TextBlock>
-                        <Button Content="Akzeptieren" Width="70" HorizontalAlignment="Left" Margin="23, 10 , 10, 10" Click="Button_Click_1"/>
-                    </StackPanel>
-                </DockPanel>
+                                <TextBox x:Name="Ort_Txt" Width="151"></TextBox>
+                    </TextBlock>
+                    <Button Content="Akzeptieren" Width="70" HorizontalAlignment="Left" Margin="23, 10 , 10, 10" Click="Button_Click_1" Grid.Row="3"/>
+
+                    <Border Width="700" 
+                                        Height="35"
+                                        Background="#3DDDC2"
+                                        CornerRadius="20"
+                                        Margin="185,23,-488,26"                                    
+                            Grid.Column="1"  
+                            Grid.RowSpan="2" Grid.Row="3"
+                            >
+                        <Border.RenderTransform>
+                            <RotateTransform Angle="50"/>
+                        </Border.RenderTransform>
+                    </Border>
+                    <Border Width="700"
+                                        Height="35"
+                                        Background="Pink"
+                                        CornerRadius="20"
+                                        Margin="230,2,-533,5"                                    
+                            Grid.Column="1" Grid.Row="3"
+                            >
+                        <Border.RenderTransform>
+                            <RotateTransform Angle="50"/>
+
+                        </Border.RenderTransform>
+                    </Border>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#383660"
+                            CornerRadius="20"
+                            Margin="164,35,-467,14"
+                            Grid.Column="1"
+                            Grid.RowSpan="2" Grid.Row="4"
+                                        >
+                        <Border.RenderTransform>
+                            <RotateTransform Angle="50"/>
+                        </Border.RenderTransform>
+                    </Border>
+                </Grid>
             </TabItem>
             <TabItem Header="Darlehensvertrag">
-                <DockPanel VerticalAlignment="Top">
-                    <StackPanel>
-                        <TextBlock  HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15">
-                            Art:
-                                <TextBox Width="140" > </TextBox>
-                        </TextBlock>
-                        <TextBlock HorizontalAlignment="Left">
-                                Zeitpunkt:
-                                <TextBox Width="110"></TextBox>
-                        </TextBlock>
-                        <TextBlock HorizontalAlignment="Left">
-                                Rückgabepunkt:
-                                <TextBox Width="78"></TextBox>
-                        </TextBlock>
-                        <TextBlock HorizontalAlignment="Left">
-                                Ort:
-                                <TextBox Width="143"></TextBox>
-                        </TextBlock>
-                        <Button Content="Akzeptieren" Width="70" HorizontalAlignment="Left" Margin="23, 10 , 10, 10" Click="Button_Click"/>
-                    </StackPanel>
+                <Grid ShowGridLines="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
 
-                </DockPanel>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15" Grid.Row="0">
+                            Art:
+                                <TextBox x:Name="Art_txt1" Width="150"> </TextBox>
+                    </TextBlock>
+                    <TextBlock Foreground="White" FontSize="15" HorizontalAlignment="Left" Grid.Row="1">
+                                Zeitpunkt:
+                                <TextBox x:Name="Zeitpunkt_txt1"  Width="110"></TextBox>
+                    </TextBlock>
+                    <TextBlock Foreground="White" FontSize="15" HorizontalAlignment="Left" Grid.Row="2">
+                               Rückgabe Zeitpunkt:
+                                <TextBox x:Name="Rückgabezeitpunkt_txt1"  Width="110"></TextBox>
+                    </TextBlock>
+                    <TextBlock Foreground="White" FontSize="15" HorizontalAlignment="Left" Grid.Row="3">
+                                Ort:
+                                <TextBox x:Name="Ort_Txt1" Width="151"></TextBox>
+                    </TextBlock>
+                    <Button Content="Akzeptieren" Width="70" HorizontalAlignment="Left" Margin="23, 10 , 10, 10" Click="Button_Click_1" Grid.Row="4"/>
+
+                    <Border Width="700" 
+                                        Height="35"
+                                        Background="#3DDDC2"
+                                        CornerRadius="20"
+                                        Margin="71,142,-374,229"                                    
+                            Grid.Column="1"  
+                            Grid.RowSpan="10"
+                            >
+                        <Border.RenderTransform>
+                            <RotateTransform Angle="50"/>
+                        </Border.RenderTransform>
+                    </Border>
+                    <Border Width="700"
+                                        Height="35"
+                                        Background="Pink"
+                                        CornerRadius="20"
+                                        Margin="156,167,-459,204"                                    
+                            Grid.Column="1"   
+                            Grid.RowSpan="10"
+                            >
+                        <Border.RenderTransform>
+                            <RotateTransform Angle="50"/>
+                        </Border.RenderTransform>
+                    </Border>
+                    <Border Width="700"
+                            Height="35"
+                            Background="#383660"
+                            CornerRadius="20"
+                            Margin="55,201,-358,170"
+                            Grid.Column="1"
+                            Grid.RowSpan="10"
+                                        >
+                        <Border.RenderTransform>
+                            <RotateTransform Angle="50"/>
+                        </Border.RenderTransform>
+                    </Border>
+
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>
